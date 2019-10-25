@@ -1,12 +1,27 @@
-<!DOCTYPE html>
 <html>
-  <body>
-        <link rel="stylesheet" href="styles.css" />
-        <script text="type/javascript" src="script.js">
-        </script>
-        <div class="navbar">
-        Link to GitHub Repository:
-        <a href="https://github.com/WhatAmIFighting4/Creative-Project-2"> CLICK HERE  </a>
+    <head>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <title></title>
+</head>
+<body>
+    <div id="app">
+       <button v-on:click="curiousity">Curiosity</button>
+       <button v-on:click="opportunity">Opportunity</button>
+       <button v-on:click="spirit">Spirit</button>
+       <br>
+       <button v-on:click="Fhaz">Front Hazard Avoidance Camera</button>
+       <div v-if='mast'><button v-on:click="Mast">Mast Camera</button></div>
+       <div v-if='chemcam'><button v-on:click="Chemcam">Chemistry and Camera Complex</button></div>
+       <div v-if='pancam'><button v-on:click="Pancam">Panoramic Camera</button></div>
+       <div v-if='minites'><button v-on:click="Minites">Miniature Thermal Emission Spectrometer</button></div>
+       <img v-bind:src="current.img_src">
     </div>
-  </body>
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
+  <script src="script.js"></script>
+</body>
+    
+    
 </html>
