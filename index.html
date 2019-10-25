@@ -6,21 +6,33 @@
 </head>
 <body>
     <div id="app">
+        <p>
+            Select a Mars rover: <br>
        <button v-on:click="curiousity">Curiosity</button>
        <button v-on:click="opportunity">Opportunity</button>
        <button v-on:click="spirit">Spirit</button>
-       <br>
+       <br><br><br>
+
+        Choose a camera: <br>
        <button v-on:click="Fhaz">Front Hazard Avoidance Camera</button>
        <div v-if='mast'><button v-on:click="Mast">Mast Camera</button></div>
-       <div v-if='chemcam'><button v-on:click="Chemcam">Chemistry and Camera Complex</button></div>
-       <div v-if='pancam'><button v-on:click="Pancam">Panoramic Camera</button></div>
+       <br>
+       <div v-if='chemcam'><button v-on:click="Chemcam">Chemistry and Camera Complex</button></div><br>
+       <div v-if='pancam'><button v-on:click="Pancam">Panoramic Camera</button></div><br>
        <div v-if='minites'><button v-on:click="Minites">Miniature Thermal Emission Spectrometer</button></div>
-       <img v-bind:src="current.img_src">
+       <br>
+       <img v-bind:src="current.img_src" height="400" width = "400">
+       <br><br><br>
+       </p>
     </div>
      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
   <script src="script.js"></script>
+      <div class="navbar">
+        Link to GitHub Repository:
+        <a href="https://github.com/renbejar/Vue-Creative-Project"> CLICK HERE  </a>
+    </div>
 </body>
     
     
