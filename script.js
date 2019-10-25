@@ -1,5 +1,4 @@
-
-/* global axois*/
+/* global axios*/
 let app = new Vue({
   el: '#app',
   data: {
@@ -92,5 +91,3 @@ let app = new Vue({
       } 
   }
 })
-
-
